@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="924bbdfba633497cb5c6a1f41099e1ec" Name="Diagram1">
+        <EntityTypeShape EntityType="DCAAModel.ADSBData" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.AgriTraxImages" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.AgriTraxManagement" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ApproalDetail" Width="1.5" PointX="6.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BillingRules" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BillingRulesCost" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BillingRulesGroup" Width="1.5" PointX="2.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BlackBoxCost" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BlackBoxLog" Width="1.5" PointX="11.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BlackBoxTransaction" Width="1.5" PointX="11.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.CommsDetail" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ContentManagement" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneCheckList" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneCheckListItem" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneCheckListValidation" Width="1.5" PointX="13.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneData" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneDefinition" Width="1.5" PointX="13.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneDocuments" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneFlight" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneFlightVideo" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DroneGPSLog" Width="1.5" PointX="17.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.FlightInfo" Width="1.5" PointX="17.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.FlightMapData" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.GCA_Approval" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.LiveDrone" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.LUP_Drone" Width="1.5" PointX="19.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.LUP_Product" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_Drone_User" Width="1.5" PointX="12.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_DroneDetails" Width="1.5" PointX="19.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_DroneParts" Width="1.5" PointX="19.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_DroneServiceParts" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_ProfileMenu" Width="1.5" PointX="14.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.M2M_UserAccount" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Account" Width="1.5" PointX="21.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_BlackBox" Width="1.5" PointX="21.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_CheckList_Drone" Width="1.5" PointX="21.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_CheckListItems_Drone" Width="1.5" PointX="21.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Comms" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Drone" Width="1.5" PointX="4.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Drone_Setup" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_DroneCheckList" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_DroneCheckListItems" Width="1.5" PointX="23.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_DroneService" Width="1.5" PointX="10.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Menu" Width="1.5" PointX="23.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_NOC" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_NoFlyZone" Width="1.5" PointX="23.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Parts" Width="1.5" PointX="19.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Pilot_Log" Width="1.5" PointX="21.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Product" Width="1.5" PointX="23.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_Profile" Width="1.5" PointX="12.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_RPAS_User" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_TrafficMonitor" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_User" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_User_Pilot" Width="1.5" PointX="25.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_User_Pilot_Certification" Width="1.5" PointX="6.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.MSTR_User_Pilot_ExponentUAS" Width="1.5" PointX="25.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.NOC_Details" Width="1.5" PointX="10" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoad_AutoFix" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadData" Width="1.5" PointX="25.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadDataGPS" Width="1.5" PointX="25.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayloadDataGridLines" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadDataRFID" Width="1.5" PointX="27.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadYard" Width="1.5" PointX="27.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PortalAlert" Width="1.5" PointX="27.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PortalAlertEmail" Width="1.5" PointX="27.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PortalAlertRegistration" Width="1.5" PointX="25.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PortalAuth" Width="1.5" PointX="27.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.POS_Customer" Width="1.5" PointX="8.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.POS_Organization" Width="1.5" PointX="10.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.POS_Shop" Width="1.5" PointX="12.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ProductDefinition" Width="1.5" PointX="14.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ProductHistory" Width="1.5" PointX="19.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ProductTransactions" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.SMSTable" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.TrafficData" Width="1.5" PointX="29.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.TrafficMonitor" Width="1.5" PointX="29.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.UserLog" Width="1.5" PointX="29.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.UserRPASPermit" Width="1.5" PointX="29.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.BlackBoxData" Width="1.5" PointX="29.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.DCAA_PermitDetail" Width="1.5" PointX="27.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.ip2location" Width="1.5" PointX="29.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.Nationality" Width="1.5" PointX="21.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayloadDataGrid" Width="1.5" PointX="23.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadFlight" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadImageData" Width="1.5" PointX="31.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadMapData" Width="1.5" PointX="31.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayloadTraffic" Width="1.5" PointX="16.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.PayLoadYardGrid" Width="1.5" PointX="31.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.SimulatorFlights" Width="1.5" PointX="31.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DCAAModel.sysdiagrams" Width="1.5" PointX="31.75" PointY="27.75" IsExpanded="true" />
+        <AssociationConnector Association="DCAAModel.fk_RuleID" ManuallyRouted="false" />
+        <AssociationConnector Association="DCAAModel.fk_GroupID" ManuallyRouted="false" />
+        <AssociationConnector Association="DCAAModel.FK__CommsDeta__Messa__5EDF0F2E" ManuallyRouted="false" />
+        <AssociationConnector Association="DCAAModel.FK_FromUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DCAAModel.FK_M2M_DroneServiceParts_M2M_DroneServiceParts" ManuallyRouted="false" />
+        <AssociationConnector Association="DCAAModel.FK_NocApplicationID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
