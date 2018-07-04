@@ -1,0 +1,224 @@
+﻿@import "compass";
+@import "compass/css3/font-face";
+
+$BodyColor: #1C1C1C;
+$HiliteColor1: #ff0000;
+$HiliteColor2: #18bdec;
+$HiliteColor3: #5ffff2;
+
+$MenuColor: #e5e5e5;
+$ShadedColur: #ededed;
+$MenuHiliteColor: #cacaca;
+$DarkShade: #474747;
+
+$BreachColor: #fe0000;
+$AlertColor: #f2a003;
+$SafeColor: #53a100; 
+$FilterColor: #018aff;
+
+$Padding: 20px;
+
+//$VerticalGap: 15px;
+@include font-face("FontAwesome", font-files( 
+  "/fonts/fontawesome-webfont.ttf", 
+  "/fonts/FontAwesome.otf", 
+  "/fonts/fontawesome-webfont.svg", 
+  "/fonts/fontawesome-webfont.eot", 
+  "/fonts/fontawesome-webfont.woff", 
+  "/fonts/fontawesome-webfont.woff2" ));
+
+@font-face {
+  font-family: 'Avenir Next Condensed Demi';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.woff2') format('woff2'), 
+       url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.woff') format('woff'), 
+       url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.ttf') format('truetype'), 
+       url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.svg#AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+} 
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.svg#AvenirNextCondensed/AvenirNextCondensed-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed Ultra';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.svg#AvenirNextCondensed/AvenirNextCondensed-UltraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.svg#AvenirNextCondensed/AvenirNextCondensed-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.svg#AvenirNextCondensed/AvenirNextCondensed-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed Demi';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.svg#AvenirNextCondensed/AvenirNextCondensed-DemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.svg#AvenirNextCondensed/AvenirNextCondensed-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.svg#AvenirNextCondensed/AvenirNextCondensed-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.svg#AvenirNextCondensed/AvenirNextCondensed-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.svg#AvenirNextCondensed/AvenirNextCondensed-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.svg#AvenirNextCondensed/AvenirNextCondensed-HeavyItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed Ultra';
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.eot');
+  src: url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.woff2') format('woff2'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.woff') format('woff'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.ttf') format('truetype'), url('/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.svg#AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Lt2.eot');
+    src: url('/fonts/Advent/advent-Lt2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Lt2.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Lt2.woff') format('woff'),
+        url('/fonts/Advent/advent-Lt2.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Lt2.svg#advent-Lt2') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Regular.eot');
+    src: url('/fonts/Advent/advent-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Regular.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Regular.woff') format('woff'),
+        url('/fonts/Advent/advent-Regular.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Regular.svg#advent-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Bd2.eot');
+    src: url('/fonts/Advent/advent-Bd2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Bd2.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Bd2.woff') format('woff'),
+        url('/fonts/Advent/advent-Bd2.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Bd2.svg#advent-Bd2') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Bd1.eot');
+    src: url('/fonts/Advent/advent-Bd1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Bd1.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Bd1.woff') format('woff'),
+        url('/fonts/Advent/advent-Bd1.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Bd1.svg#advent-Bd1') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Lt3.eot');
+    src: url('/fonts/Advent/advent-Lt3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Lt3.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Lt3.woff') format('woff'),
+        url('/fonts/Advent/advent-Lt3.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Lt3.svg#advent-Lt3') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Bd3.eot');
+    src: url('/fonts/Advent/advent-Bd3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Bd3.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Bd3.woff') format('woff'),
+        url('/fonts/Advent/advent-Bd3.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Bd3.svg#advent-Bd3') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url('/fonts/Advent/advent-Lt1.eot');
+    src: url('/fonts/Advent/advent-Lt1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Advent/advent-Lt1.woff2') format('woff2'),
+        url('/fonts/Advent/advent-Lt1.woff') format('woff'),
+        url('/fonts/Advent/advent-Lt1.ttf') format('truetype'),
+        url('/fonts/Advent/advent-Lt1.svg#advent-Lt1') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+@mixin Clear() {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+

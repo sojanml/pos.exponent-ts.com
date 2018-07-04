@@ -1,0 +1,46 @@
+﻿
+@{
+  ViewBag.Title = "Index";
+}
+
+<table id="qViewTable" class="report">
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>RPAS Serial</th>
+      <th>Manufacture</th>
+      <th>Model</th>
+      <th>Created On</th>
+    </tr>
+  </thead>
+
+</table>
+
+@section header {
+  <link rel="stylesheet" href="~/DataTables/datatables.css" />
+}
+
+@section scripts {
+  <script type="text/javascript" src="~/DataTables/datatables.min.js"></script>
+  <script type="text/javascript" src="~/Scripts/site-util.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var qViewDataTable = $('#qViewTable').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "searchDelay": 1000,
+        "iDisplayLength": 50,
+        "dom": '<"dataTables_wrapper"<"dataTables_head"lf>t<"dataTables_footer"p>>',
+        "order": [[0, "desc"]],
+        "ajax": "/RPAS/Data/",
+        "columns": [
+          { "data": "Reference" },
+          { "data": "RPASSerial" },
+          { "data": "RPASManufacture" },
+          { "data": "RPASModel" },
+          { "data": function (data) { return Util.FmtDateTime(data.CreatedOn)}}
+        ]
+      });
+    });
+  </script>
+}

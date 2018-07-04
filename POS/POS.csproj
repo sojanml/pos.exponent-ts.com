@@ -151,6 +151,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RPASController.cs" />
+    <Compile Include="DataTables\DataTableQuery.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -403,6 +405,7 @@
     <Compile Include="Models\POS_Customer.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\POS_Models_Helper.cs" />
     <Compile Include="Models\POS_Organization.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
@@ -440,14 +443,76 @@
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="ViewModels\ChangePassword.cs" />
+    <Compile Include="ViewModels\LoginForm.cs" />
+    <Compile Include="ViewModels\POS_Customer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.bootstrap.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.bootstrap.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.bootstrap4.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.bootstrap4.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.foundation.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.foundation.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.jqueryui.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.jqueryui.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.semanticui.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\dataTables.semanticui.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\jquery.dataTables.css" />
+    <Content Include="DataTables\DataTables-1.10.18\css\jquery.dataTables.min.css" />
+    <Content Include="DataTables\DataTables-1.10.18\images\sort_asc.png" />
+    <Content Include="DataTables\DataTables-1.10.18\images\sort_asc_disabled.png" />
+    <Content Include="DataTables\DataTables-1.10.18\images\sort_both.png" />
+    <Content Include="DataTables\DataTables-1.10.18\images\sort_desc.png" />
+    <Content Include="DataTables\DataTables-1.10.18\images\sort_desc_disabled.png" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.bootstrap.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.bootstrap.min.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.min.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.foundation.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.foundation.min.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.jqueryui.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.jqueryui.min.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.semanticui.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\dataTables.semanticui.min.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\jquery.dataTables.js" />
+    <Content Include="DataTables\DataTables-1.10.18\js\jquery.dataTables.min.js" />
+    <Content Include="DataTables\datatables.css" />
+    <Content Include="DataTables\datatables.js" />
+    <Content Include="DataTables\datatables.min.css" />
+    <Content Include="DataTables\datatables.min.js" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\Advent\advent-Bd1.svg" />
+    <Content Include="fonts\Advent\advent-Bd2.svg" />
+    <Content Include="fonts\Advent\advent-Bd3.svg" />
+    <Content Include="fonts\Advent\advent-Lt1.svg" />
+    <Content Include="fonts\Advent\advent-Lt2.svg" />
+    <Content Include="fonts\Advent\advent-Lt3.svg" />
+    <Content Include="fonts\Advent\advent-Regular.svg" />
+    <Content Include="fonts\Advent\demo.html" />
+    <Content Include="fonts\Advent\stylesheet.css" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Bold.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-BoldItalic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBold.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBoldItalic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Heavy.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-HeavyItalic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Italic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Medium.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-MediumItalic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Regular.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLight.svg" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLightItalic.svg" />
+    <Content Include="fonts\AvenirNextCondensed\demo.html" />
+    <Content Include="fonts\AvenirNextCondensed\stylesheet.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\logo.png" />
     <Content Include="Models\Models.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Models.Context.cs</LastGenOutput>
@@ -470,6 +535,90 @@
     <Content Include="Models\Models.edmx.diagram">
       <DependentUpon>Models.edmx</DependentUpon>
     </Content>
+    <Content Include="SASS\POS_Common.scss" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\Advent\advent-Bd1.eot" />
+    <Content Include="fonts\Advent\advent-Bd1.ttf" />
+    <Content Include="fonts\Advent\advent-Bd1.woff" />
+    <Content Include="fonts\Advent\advent-Bd1.woff2" />
+    <Content Include="fonts\Advent\advent-Bd2.eot" />
+    <Content Include="fonts\Advent\advent-Bd2.ttf" />
+    <Content Include="fonts\Advent\advent-Bd2.woff" />
+    <Content Include="fonts\Advent\advent-Bd2.woff2" />
+    <Content Include="fonts\Advent\advent-Bd3.eot" />
+    <Content Include="fonts\Advent\advent-Bd3.ttf" />
+    <Content Include="fonts\Advent\advent-Bd3.woff" />
+    <Content Include="fonts\Advent\advent-Bd3.woff2" />
+    <Content Include="fonts\Advent\advent-Lt1.eot" />
+    <Content Include="fonts\Advent\advent-Lt1.ttf" />
+    <Content Include="fonts\Advent\advent-Lt1.woff" />
+    <Content Include="fonts\Advent\advent-Lt1.woff2" />
+    <Content Include="fonts\Advent\advent-Lt2.eot" />
+    <Content Include="fonts\Advent\advent-Lt2.ttf" />
+    <Content Include="fonts\Advent\advent-Lt2.woff" />
+    <Content Include="fonts\Advent\advent-Lt2.woff2" />
+    <Content Include="fonts\Advent\advent-Lt3.eot" />
+    <Content Include="fonts\Advent\advent-Lt3.ttf" />
+    <Content Include="fonts\Advent\advent-Lt3.woff" />
+    <Content Include="fonts\Advent\advent-Lt3.woff2" />
+    <Content Include="fonts\Advent\advent-Regular.eot" />
+    <Content Include="fonts\Advent\advent-Regular.ttf" />
+    <Content Include="fonts\Advent\advent-Regular.woff" />
+    <Content Include="fonts\Advent\advent-Regular.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Bold.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Bold.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Bold.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Bold.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-BoldItalic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-BoldItalic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-BoldItalic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-BoldItalic.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBold.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBold.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBold.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBold.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBoldItalic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBoldItalic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBoldItalic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-DemiBoldItalic.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Heavy.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Heavy.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Heavy.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Heavy.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-HeavyItalic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-HeavyItalic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-HeavyItalic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-HeavyItalic.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Italic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Italic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Italic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Italic.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Medium.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Medium.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Medium.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Medium.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-MediumItalic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-MediumItalic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-MediumItalic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-MediumItalic.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Regular.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Regular.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Regular.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-Regular.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLight.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLight.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLight.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLight.woff2" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLightItalic.eot" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLightItalic.ttf" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLightItalic.woff" />
+    <Content Include="fonts\AvenirNextCondensed\AvenirNextCondensed-UltraLightItalic.woff2" />
+    <Content Include="SASS\POS.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -481,6 +630,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\site-util.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -492,9 +644,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_POS.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Created.cshtml" />
+    <Content Include="Views\RPAS\Index.cshtml" />
+    <Content Include="Views\Home\ResetPassword.cshtml" />
+    <Content Include="Views\Home\PasswordChanged.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

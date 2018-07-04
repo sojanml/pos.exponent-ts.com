@@ -1,31 +1,77 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model POS.ViewModels.LoginForm
+
+@if(Session["UserID"] == null) { 
+<section class="CenterColumn">
+  <div class="title">Login to POS</div>
+  @using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+      @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+      @Html.HiddenFor(model => model.ID)
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.LoginEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.LoginEmail, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.LoginEmail, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.LoginPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.LoginPassword, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.LoginPassword, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+          <input type="submit" value="Login" class="btn btn-default" />
+        </div>
+      </div>
+    </div>
+  }
+
+</section>
+
+} else {
+
+<section class="grid-2-boxes">
+
+  <div class="display-box">
+    <div class="title">New Customer</div>
+    <div class="padded">
+        <div>
+          When you sell a RPAS (Drone) to the customer, you must use this option
+          to register the customer details against the drone
+        </div>
+        <a class="button create" href="@Url.Action("Create","Home")">
+          <span class="icon set1">&#xf0fe;</span>
+          Register Customer
+        </a>
+    </div>
+  </div>
+
+  <div class="display-box">
+    <div class="title">Registered RPAS</div>
+    <div class="padded">
+        <div>
+          You can view all the registered Customers/RPAS
+          from this screen. 
+        </div>
+        <a class="button view" href="@Url.Action("Index","RPAS")">
+          <span class="icon set1">&#xf21d;</span>
+          RPAS Registed
+        </a>
+    </div>
+  </div>
+
+</section>
+
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

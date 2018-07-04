@@ -1,0 +1,119 @@
+﻿@model POS.Models.POS_Customer
+<section class="CenterColumn">
+    <div class="title">Customer Created</div>
+    <div>
+      Customer is created successfully with the reference number
+
+      <span class="reference">@Model.Reference</span>
+    </div>
+
+    <div class="title">Customer Information</div>
+
+    <div class="form-horizontal">
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.CustomerEmail, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerTelephone, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.CustomerTelephone, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerEmiratesID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @if (String.IsNullOrEmpty(Model.CustomerEmiratesID)) {
+            <span class="info" >Not Available</span>
+          } else {
+            @Html.DisplayFor(model => model.CustomerEmiratesID, new { htmlAttributes = new { @class = "form-control" } })
+          }
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerPassportID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @if (String.IsNullOrEmpty(Model.CustomerPassportID)) {
+        <span class="info">Not Available</span>
+          } else {
+        @Html.DisplayFor(model => model.CustomerPassportID, new { htmlAttributes = new { @class = "form-control" } })
+          }
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerNationality, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @if (String.IsNullOrEmpty(Model.CustomerNationality)) {
+        <span class="info">Not Available</span>
+          } else {
+        @Html.DisplayFor(model => model.CustomerNationality, new { htmlAttributes = new { @class = "form-control" } })
+          }
+        </div>
+      </div>
+
+      <div class="title">RPAS License</div>
+
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASLicenseNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @if (String.IsNullOrEmpty(Model.RPASLicenseNumber)) {
+        <span class="info">Not Available</span>
+          } else {
+        @Html.DisplayFor(model => model.RPASLicenseNumber, new { htmlAttributes = new { @class = "form-control" } })
+          }
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASLicenseExpiry, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @if (Model.RPASLicenseExpiry == null) {
+        <span class="info">Not Available</span>
+          } else {
+        @Html.DisplayFor(model => model.RPASLicenseExpiry, new { htmlAttributes = new { @class = "form-control" } })
+          }
+        </div>
+      </div>
+
+
+      <div class="title">RPAS (DRONE) Information </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASSerial, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.RPASSerial, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASManufacture, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.RPASManufacture, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASModel, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-value">
+          @Html.DisplayFor(model => model.RPASModel, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+      </div>
+
+      </div>
+
+</section>

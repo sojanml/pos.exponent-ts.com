@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DCAAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DCAAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ADSBData">
           <Key>
             <PropertyRef Name="ID" />
@@ -1504,17 +1504,6 @@ warning 6002: The table/view 'DCAA.dbo.PayloadTraffic' does not have a primary k
           <Property Name="PTid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="VideoTime" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DCAA.dbo.PayLoadTrafficData' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="PayLoadTrafficData">
-          <Property Name="FrameNumber" Type="int" />
-          <Property Name="VehicleCount" Type="int" />
-          <Property Name="TimeFrame" Type="decimal" Precision="18" Scale="12" />
-          <Property Name="FlightVideoID" Type="int" />
-          <Property Name="FlightID" Type="int" />
-          <Property Name="IsProcessed" Type="int" />
-          <Property Name="CreatedTimestamp" Type="datetime" />
-        </EntityType>-->
         <EntityType Name="PayLoadYard">
           <Key>
             <PropertyRef Name="YardID" />
@@ -1585,12 +1574,6 @@ warning 6002: The table/view 'DCAA.dbo.PayLoadYardGrid' does not have a primary 
           <Property Name="Proximity" Type="varchar" MaxLength="2500" />
           <Property Name="ZoneID" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DCAA.dbo.PortalAlert_User' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="PortalAlert_User">
-          <Property Name="AlertID" Type="int" />
-          <Property Name="UserID" Type="int" />
-        </EntityType>-->
         <EntityType Name="PortalAlertEmail">
           <Key>
             <PropertyRef Name="EmailID" />
@@ -1648,6 +1631,9 @@ warning 6013: The table/view 'DCAA.dbo.PortalAlert_User' does not have a primary
           <Property Name="RPASSerial" Type="varchar" MaxLength="60" />
           <Property Name="RPASManufacture" Type="varchar" MaxLength="60" />
           <Property Name="RPASModel" Type="varchar" MaxLength="60" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="Reference" Type="varchar" MaxLength="16" />
+          <Property Name="UserLoginKey" Type="varchar" MaxLength="32" Nullable="false" />
         </EntityType>
         <EntityType Name="POS_Organization">
           <Key>
@@ -2184,8 +2170,7 @@ warning 6002: The table/view 'DCAA.dbo.sysdiagrams' does not have a primary key 
             <End Role="BillingRulesCost" EntitySet="BillingRulesCost" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DCAAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -3620,6 +3605,9 @@ warning 6002: The table/view 'DCAA.dbo.sysdiagrams' does not have a primary key 
           <Property Name="RPASSerial" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
           <Property Name="RPASManufacture" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
           <Property Name="RPASModel" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Reference" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="UserLoginKey" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="POS_Organization">
           <Key>
@@ -5636,6 +5624,9 @@ warning 6002: The table/view 'DCAA.dbo.sysdiagrams' does not have a primary key 
           <EntitySetMapping Name="POS_Customer">
             <EntityTypeMapping TypeName="DCAAModel.POS_Customer">
               <MappingFragment StoreEntitySet="POS_Customer">
+                <ScalarProperty Name="UserLoginKey" ColumnName="UserLoginKey" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="ShopID" ColumnName="ShopID" />
                 <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />

@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url(/fonts/fontawesome-webfont.ttf) format('truetype'), url(/fonts/FontAwesome.otf) format('opentype'), url(/fonts/fontawesome-webfont.svg) format('svg'), url(/fonts/fontawesome-webfont.eot) format('embedded-opentype'), url(/fonts/fontawesome-webfont.woff) format('woff'), url(/fonts/fontawesome-webfont.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Avenir Next Condensed Demi';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic.svg#AvenirNextCondensed/AvenirNextCondensed-DemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.svg#AvenirNextCondensed/AvenirNextCondensed-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed Ultra';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLight.svg#AvenirNextCondensed/AvenirNextCondensed-UltraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Italic.svg#AvenirNextCondensed/AvenirNextCondensed-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Heavy.svg#AvenirNextCondensed/AvenirNextCondensed-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed Demi';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.svg#AvenirNextCondensed/AvenirNextCondensed-DemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.svg#AvenirNextCondensed/AvenirNextCondensed-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-Regular.svg#AvenirNextCondensed/AvenirNextCondensed-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-MediumItalic.svg#AvenirNextCondensed/AvenirNextCondensed-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-BoldItalic.svg#AvenirNextCondensed/AvenirNextCondensed-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-HeavyItalic.svg#AvenirNextCondensed/AvenirNextCondensed-HeavyItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next Condensed Ultra';
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.eot");
+  src: url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.woff2") format("woff2"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.woff") format("woff"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.ttf") format("truetype"), url("/fonts/AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic.svg#AvenirNextCondensed/AvenirNextCondensed-UltraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Lt2.eot");
+  src: url("/fonts/Advent/advent-Lt2.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Lt2.woff2") format("woff2"), url("/fonts/Advent/advent-Lt2.woff") format("woff"), url("/fonts/Advent/advent-Lt2.ttf") format("truetype"), url("/fonts/Advent/advent-Lt2.svg#advent-Lt2") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Regular.eot");
+  src: url("/fonts/Advent/advent-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Regular.woff2") format("woff2"), url("/fonts/Advent/advent-Regular.woff") format("woff"), url("/fonts/Advent/advent-Regular.ttf") format("truetype"), url("/fonts/Advent/advent-Regular.svg#advent-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Bd2.eot");
+  src: url("/fonts/Advent/advent-Bd2.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Bd2.woff2") format("woff2"), url("/fonts/Advent/advent-Bd2.woff") format("woff"), url("/fonts/Advent/advent-Bd2.ttf") format("truetype"), url("/fonts/Advent/advent-Bd2.svg#advent-Bd2") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Bd1.eot");
+  src: url("/fonts/Advent/advent-Bd1.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Bd1.woff2") format("woff2"), url("/fonts/Advent/advent-Bd1.woff") format("woff"), url("/fonts/Advent/advent-Bd1.ttf") format("truetype"), url("/fonts/Advent/advent-Bd1.svg#advent-Bd1") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Lt3.eot");
+  src: url("/fonts/Advent/advent-Lt3.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Lt3.woff2") format("woff2"), url("/fonts/Advent/advent-Lt3.woff") format("woff"), url("/fonts/Advent/advent-Lt3.ttf") format("truetype"), url("/fonts/Advent/advent-Lt3.svg#advent-Lt3") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Bd3.eot");
+  src: url("/fonts/Advent/advent-Bd3.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Bd3.woff2") format("woff2"), url("/fonts/Advent/advent-Bd3.woff") format("woff"), url("/fonts/Advent/advent-Bd3.ttf") format("truetype"), url("/fonts/Advent/advent-Bd3.svg#advent-Bd3") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Advent';
+  src: url("/fonts/Advent/advent-Lt1.eot");
+  src: url("/fonts/Advent/advent-Lt1.eot?#iefix") format("embedded-opentype"), url("/fonts/Advent/advent-Lt1.woff2") format("woff2"), url("/fonts/Advent/advent-Lt1.woff") format("woff"), url("/fonts/Advent/advent-Lt1.ttf") format("truetype"), url("/fonts/Advent/advent-Lt1.svg#advent-Lt1") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #1C1C1C;
+  font-family: 'Avenir Next Condensed';
+  font-size: 18px;
+}
+
+section {
+  width: 90%;
+  margin: auto;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+h1 {
+  font-family: Advent;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cacaca;
+}
+
+h2 {
+  font-family: Advent;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #474747;
+  border-bottom: 1px #474747 solid;
+}
+
+a {
+  color: #fe0000;
+  text-decoration: none;
+}
+a:hover {
+  color: #018aff;
+}
+
+span.icon {
+  font-family: 'FontAwesome';
+}
+
+span.reference {
+  font-weight: bold;
+  color: #018aff;
+}
+
+section.grid-2-columns,
+section.grid-3-columns {
+  display: block;
+  grid-template-columns: 100%;
+  padding: 0px 20px 0px 20px;
+}
+
+section.grid-3-columns div.grid-column {
+  background-color: #e5e5e5;
+}
+
+div.grid-column {
+  margin: 20px 0px 20px 0px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 20px 0px 20px;
+  border-bottom: 1px #1C1C1C solid;
+  margin-bottom: 20px;
+}
+header > div {
+  padding-bottom: 20px;
+}
+header div.left-section {
+  text-align: left;
+}
+header div.left-section div.logo img {
+  height: 70px;
+  width: auto;
+}
+header div.center-section {
+  text-align: center;
+}
+header div.center-section img {
+  height: 70px;
+  width: auto;
+}
+header div.right-section {
+  text-align: right;
+}
+
+footer {
+  border-top: 1px rgba(9, 9, 9, 0.59) solid;
+  color: rgba(9, 9, 9, 0.59);
+  text-align: left;
+  font-size: 12px;
+  padding: 0px 20px 0px 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+div.form-group,
+div.editor-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+div.form-group input[type=text],
+div.form-group input[type=datetime],
+div.form-group input[type=password],
+div.form-group input[type=email],
+div.form-group select,
+div.form-group textarea,
+div.editor-field input[type=text],
+div.editor-field input[type=datetime],
+div.editor-field input[type=password],
+div.editor-field input[type=email],
+div.editor-field select,
+div.editor-field textarea {
+  box-sizing: border-box;
+  padding: 2px 5px 2px 5px;
+  font-family: 'Avenir Next Condensed';
+  width: 100%;
+  border: 1px #cacaca solid;
+  font-size: 18px;
+}
+
+div.form-value {
+  box-sizing: border-box;
+  padding: 2px 5px 2px 5px;
+  font-family: 'Avenir Next Condensed';
+  width: 100%;
+  border: 1px #cacaca solid;
+  font-size: 18px;
+}
+div.form-value span.info {
+  color: #f2a003;
+}
+
+div.form-toolbar,
+div.form-group {
+  margin: 20px 0px 0px 0px;
+}
+div.form-toolbar input[type=submit],
+div.form-group input[type=submit] {
+  padding: 2px 5px 2px 5px;
+  font-family: 'Avenir Next Condensed';
+  font-size: 18px;
+  min-width: 70px;
+  box-sizing: border-box;
+}
+
+.shaded {
+  background-color: #e5e5e5;
+}
+
+.padded {
+  padding: 20px;
+}
+
+span.field-validation-error {
+  color: #fe0000;
+}
+
+div.validation-summary-errors ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+div.validation-summary-errors ul li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: #fe0000;
+}
+
+section.CenterColumn {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  border: 1px #cacaca solid;
+  border-radius: 3px;
+  padding: 20px;
+}
+section.CenterColumn div.title {
+  border-bottom: 1px #474747 solid;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: Advent;
+  font-size: 25px;
+  color: #018aff;
+  font-weight: bold;
+}
+section.CenterColumn div.sub-title {
+  color: #f2a003;
+}
+
+section.grid-2-boxes {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin: 50px auto 50px auto;
+}
+section.grid-2-boxes div.display-box {
+  border: 1px #cacaca solid;
+  border-radius: 3px;
+  background-color: #e5e5e5;
+}
+section.grid-2-boxes div.display-box div.title {
+  background-color: #cacaca;
+  padding: 5px 20px 5px 20px;
+  font-family: Advent;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+a.button {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #1C1C1C;
+  border: 1px solid #cacaca;
+  background-color: white;
+  display: inline-block;
+  padding: 2px 10px 2px 10px;
+  text-transform: uppercase;
+}
+a.button.create:hover {
+  background-color: #cacaca;
+  color: #53a100;
+}
+a.button.create span.icon {
+  color: #53a100;
+}
+a.button.view:hover {
+  background-color: #cacaca;
+  color: #018aff;
+}
+a.button.view span.icon {
+  color: #018aff;
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: normal;
+  text-align: left;
+  background-color: #474747;
+  color: #e5e5e5;
+}
+
+table.dataTable thead th {
+  padding: 2px 5px 2px 5px;
+  border-right: 1px #cacaca solid;
+}
+table.dataTable thead th:last-child {
+  border-right: 0px #474747 none;
+}
+
+table.dataTable tbody td {
+  padding: 2px 5px 2px 5px;
+  border-right: 1px #cacaca solid;
+  border-bottom: 1px #cacaca solid;
+}
+table.dataTable tbody td:last-child {
+  border-right: 0px #cacaca none;
+}
+
+table.dataTable tbody tr.odd td {
+  background-color: #e5e5e5;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0px 5px 0px 5px;
+}

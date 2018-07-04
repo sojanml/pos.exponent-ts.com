@@ -1,0 +1,117 @@
+﻿@model POS.Models.POS_Customer
+<section class="CenterColumn">
+  @using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary();
+
+
+    <div class="title">Customer Information</div>
+
+    <div class="form-horizontal">
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerEmail, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerEmail, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerTelephone, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerTelephone, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerTelephone, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerEmiratesID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerEmiratesID, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerEmiratesID, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerPassportID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerPassportID, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerPassportID, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.CustomerNationality, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.CustomerNationality, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.CustomerNationality, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="title">RPAS License</div>
+      <div class="sub-title">
+        Please skip this section if the customer do
+        not have a RPAS License.
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASLicenseNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.RPASLicenseNumber, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.RPASLicenseNumber, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASLicenseExpiry, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.RPASLicenseExpiry, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.RPASLicenseExpiry, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+
+      <div class="title">RPAS (DRONE) Information </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASSerial, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.RPASSerial, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.RPASSerial, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASManufacture, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.RPASManufacture, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.RPASManufacture, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.RPASModel, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.RPASModel, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.RPASModel, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+          <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+      </div>
+    </div>
+  }
+
+</section>
